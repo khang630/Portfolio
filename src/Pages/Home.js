@@ -1,38 +1,41 @@
-import '../CSS/Home.css'
+import { VscFoldDown } from "react-icons/vsc";
 
-import { Link } from 'react-router-dom' /*Allows us to make clickable page links where we can automatically specify the URL. So instead of having to manually click the URL and chagne the path, 
-the Link will automatically do that for us. So React Router should route and load the correct componenet*/
 
 function Home() {
     return (
-        <div className="HomePage">
-
-
-            <Link to='/Skills' className='SkillsLink'>
-                <li>Skills</li>
-            </Link>
-
-            <Link to='/Interests' className='InterestsLink'>
-                <li>Interests</li>
-            </Link>
-            <div className='Name'>Khang Nguyen</div>
-            <Link to='/Projects' className='ProjectsLink'>
-                <li>Projects</li>
-            </Link>
-            <div className='About'>
-                <p style={{fontSize: 20}}>Hi, I'm Khang Nguyen and I am a recent University Graduate.</p>
-                <p>I am currently looking for work and am open to any opportunities to develop and start my career!</p>
-                <p>I aspire to become either a Software Engineer, Data Engineer, UI/UX Designer, or Full-Stack Developer.</p>
-                <p>Aside from what I listed above, I am also open to consider other positions.</p>
-                <p>Otherwise, Thank You for visiting my portfolio and feel free to look around!</p>
+        <div name='home' className="bg-[#F6E7D8] w-full h-screen">
+            <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
+                <p className="text-[#F68989] font-bold">Hi, I'm</p>
+                <h1 className="text-[#C65D7B] text-7xl font-bold  ">Khang Nguyen</h1>
+                <h2 className="text-[#874356] font-bold">I am a recent graduate.</h2>
+                <p className="py-4 max-w-[800px]">I am currently looking for work and am open to any opportunities to develop and start my career!
+                I aspire to become either a Software Engineer, Data Engineer, UI/UX Designer, or Full-Stack Developer.
+                Aside from what I listed before, I am also open to consider other positions.
+                Otherwise, Thank You for visiting my portfolio and feel free to look around!</p>
+                <div>
+                <button className="text-[#F68989] flex items-center py-6 px-3 my-2 border-2 bg-[#3A3845]">Education <VscFoldDown/></button>
             </div>
-
-            <Link to='/Education' className='EducationLink'>
-                <li>Education</li>
-            </Link>
-
+            </div>
+            
         </div>
     )
 }
 
 export default Home
+
+/*<img className="PortfolioImage" src={PortfolioImage}/>*/
+
+/*
+<p>Hi, I'm Khang Nguyen and I am a recent University Graduate.</p>
+                <p>I am currently looking for work and am open to any opportunities to develop and start my career!</p>
+                <p>I aspire to become either a Software Engineer, Data Engineer, UI/UX Designer, or Full-Stack Developer.</p>
+                <p>Aside from what I listed above, I am also open to consider other positions.</p>
+                <p>Otherwise, Thank You for visiting my portfolio and feel free to look around!</p>s
+
+*/
+
+/* TAILWIND about paragraphs
+max-w-[1000px]: element has a max width of 1000 pixels
+mx-auto: margin left and right auto for that element
+
+*/

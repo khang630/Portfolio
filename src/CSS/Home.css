@@ -1,10 +1,8 @@
 .HomePage{
     border: 4px solid blue;
-    height: 100%;
     text-align: center;
 
 }
-
 
 .HomePage .SkillsLink{
     background-color: red;
@@ -13,10 +11,15 @@
     text-decoration: none; /*gets rid of the underline*/
     font-size: 28px;
 
-    padding-top: 20px;
-    padding-bottom: 100px;
-
     font-family: 'Koulen', cursive;
+
+}
+
+.HomePage .PortfolioImage{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  
 }
 
 .HomePage .Name{
@@ -24,6 +27,7 @@
     display: inline;
     font-size: 100px;
     font-family: 'Bebas Neue', cursive;
+
 }
 
 .HomePage .InterestsLink{
@@ -34,26 +38,19 @@
 
     /*For whatever reason if we do this it will show the Link correcly inline*/
     display: inline-block;
-    height: 30px;
-    width: 100px;
 
-    padding-right: 500px;
+    
+    
     font-family: 'Koulen', cursive;
 }
 
 .HomePage .ProjectsLink{
     background-color: palegreen;
-    display: inline;
+    display: inline-block;
     list-style: none; /*removes the bullet point*/
     text-decoration: none; /*gets rid of the underline*/
     font-size: 28px;
 
-    /*For whatever reason if we do this it will show the Link correcly inline*/
-    display: inline-block;
-    height: 30px;
-    width: 100px;
-
-    padding-left: 500px;
 
     font-family: 'Koulen', cursive;
 }
@@ -65,15 +62,13 @@
     text-decoration: none; /*gets rid of the underline*/
     font-size: 28px;
 
-    padding-top: 100px;
-    padding-bottom: 20px;
-
     font-family: 'Koulen', cursive;
 }
 
 .HomePage .About {
     display: block;
     font-family: 'Montserrat', sans-serif;
+
 }
 
 /* FONTS
