@@ -15,7 +15,7 @@ const Interests = () => {
                         <p className='text-3xl font-bold  text-[#874356] '>Piano <GiGrandPiano/></p>
                     </div>
                     <div>
-                        <p>I have a BS in Computer Science at the University of North Texas. </p>
+                        <p>I like to play piano</p>
                     </div>
                 </div>
 

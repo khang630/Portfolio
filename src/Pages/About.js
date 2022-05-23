@@ -14,7 +14,7 @@ const About = () => {
                         <p className='text-3xl font-bold  text-[#874356] '>Education</p>
                     </div>
                     <div>
-                        <p>I have a BS in Computer Science at the University of North Texas. </p>
+                        <p>I have a BS in Computer Science at the University of North Texas. I also graduated Summa Cum Laude with a 3.9 GPA. </p>
                     </div>
                 </div>
 
