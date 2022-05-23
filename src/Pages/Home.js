@@ -3,7 +3,7 @@ import { VscFoldDown } from "react-icons/vsc";
 
 function Home() {
     return (
-        <div name='home' className="bg-[#F6E7D8] w-full h-screen">
+        <div name='home' className="bg-gray-0 w-full h-screen">
             <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
                 <p className="text-[#F68989] font-bold">Hi, I'm</p>
                 <h1 className="text-[#C65D7B] text-7xl font-bold  ">Khang Nguyen</h1>
