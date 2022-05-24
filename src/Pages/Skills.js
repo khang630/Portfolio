@@ -18,14 +18,12 @@ import HTML from '../Images/HTML.png'
 
 const Skills = () => {
     return (
-        <div name='Skills' className='w-full h-screen bg-gray-0'>
+        <div name='Skills' className='w-full h-screen bg-white min-h-[800px]'>
             <div className='flex flex-col justify-center items-center w-full h-screen'>
-
-               
                     <p className='text-4xl font-bold inline border-b-4 border-[#C65D7B] mb-5 ' >Skills</p>
                     <div className=' w-full sm:max-w-[1800px] sm:max-h-[800px] grid grid-cols-2 sm:grid-cols-4 sm:gap-8 gap-1'>
                         <div className=' text-center'>
-                            <p className='text-2xl font-bold '>Programming Languages &amp; OS</p>
+                            <p className='text-2xl font-bold  '>Programming Languages &amp; OS</p>
                             <p className=' mt-3 text-center my-auto sm:mb-10'>C/C++, Java, Python, Linux</p>
                             <div className='grid grid-cols-2 gap-6 mt-5 px-3' >
                                 <img className='w-14 mx-auto my-auto hover:scale-110 duration-300 ' src={C} alt='C icon' />

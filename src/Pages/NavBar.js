@@ -13,7 +13,7 @@ const NavBar = () => {
     const handleClick = () => setNav(!nav)
 
     return (
-        <div className='fixed w-full h-[70px] flex justify-between items-center px-4 bg-[#1c1b20] text-white'>
+        <div className='fixed w-full h-[70px] flex justify-between items-center px-4 bg-[#1c1b20] text-white z-50'>
             <div>
                 <Link to="Home" smooth={true} duration={1000}>
                     <img src={Logo} alt="Logo Image" style={{ width: '50px' }} className='hover:cursor-pointer hover:scale-105 duration-300' />
@@ -62,61 +62,64 @@ const NavBar = () => {
             </div>
 
             <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#1c1b20] flex flex-col justify-center items-center'}>
-                <li className='py-6 text-4xl'>
+                <li className='py-6 text-4xl hover:scale-105 duration-300'>
                     <Link onClick={handleClick} to="Home" smooth={true} duration={1000}>
                         Home
                     </Link>
                 </li>
-                <li className='py-6 text-4xl'>
+                <li className='py-6 text-4xl hover:scale-105 duration-300'>
                     <Link onClick={handleClick} to="About" smooth={true} duration={1000}>
                         About
                     </Link>
                 </li>
-                <li className='py-6 text-4xl'>
+                <li className='py-6 text-4xl hover:scale-105 duration-300'>
                     <Link onClick={handleClick} to="Skills" smooth={true} duration={1000}>
                         Skills
                     </Link>
                 </li>
-                <li className='py-6 text-4xl'>
+                <li className='py-6 text-4xl hover:scale-105 duration-300'>
                     <Link onClick={handleClick} to="Projects" smooth={true} duration={1000}>
                         Project
                     </Link>
                 </li>
-                <li className='py-6 text-4xl'>
+                <li className='py-6 text-4xl hover:scale-105 duration-300'>
                     <Link onClick={handleClick} to="Interests" smooth={true} duration={1000}>
                         Interests
                     </Link>
                 </li>
-                <li className='py-6 text-4xl'>
+                <li className='py-6 text-4xl hover:scale-105 duration-300'>
                     <Link onClick={handleClick} to="Contact" smooth={true} duration={1000}>
                         Contact
                     </Link>
                 </li>
             </ul>
 
-            <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+            <div className='hidden lg:flex fixed flex-col top-[40%] left-0'>
                 <ul>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center'>
-                        <a className='flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0e76a8]'
-                            href='/'>
+                    <li className='w-[160px] flex justify-between items-center'>
+                        <a className='flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0e76a8] px-1 py-1 rounded-sm'
+                            href='https://www.linkedin.com/in/nguyen-khang/' target="blank" >
                             Linkedin <FaLinkedin size={30} />
                         </a>
                     </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center'>
-                        <a className='flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'
-                            href='/'>
+                    <li className='w-[160px] flex justify-between items-center'>
+                        <a className='flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333] px-1 py-1 rounded-sm'
+                            href='https://github.com/khang630' target="blank">
                             GitHub <FaGithub size={30} />
                         </a>
                     </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center'>
-                        <a className='flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[-10px] duration-300 bg-violet-500'
+                    <li className='w-[160px] flex justify-between items-center'>
+                        <a className='flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[-10px] duration-300 bg-[#874356] px-1 py-1 rounded-sm'
                             href='/'>
-                            Email <HiOutlineMail size={30} />
+                            <Link to="Contact" smooth={true} duration={1000} className='flex items-center justify-center'>
+                                Email <HiOutlineMail className='ml-7' size={30} />
+                            </Link>
                         </a>
+
                     </li>
-                    <li className='w-[160px] h-[60px] flex justify-between items-center'>
-                        <a className='flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[-10px] duration-300 bg-[##4ade80]'
-                            href='/'>
+                    <li className='w-[160px]  flex justify-between items-center'>
+                        <a className='flex justify-between items-center w-full text-gray-300 ml-[-100px] hover:ml-[-10px] duration-300 bg-[#C65D7B] px-1 py-1 rounded-sm'
+                            href={require('../Downloads/Resume.pdf')} download={"Khang Nguyen Resume"}>
                             Resume <BsFillPersonLinesFill size={30} />
                         </a>
                     </li>
