@@ -1,6 +1,7 @@
 
 import React from 'react'; /* For every componenet, in order for React to understand JSX, we need to import React. */
 import About from './Pages/About';
+import Contact from './Pages/Contact';
 import Home from './Pages/Home';
 import Interests from './Pages/Interests';
 import NavBar from './Pages/NavBar';
@@ -16,6 +17,7 @@ function App() {
       <Skills/>
       <Projects/>
       <Interests/>
+      <Contact/>
     </div>
   );
 }

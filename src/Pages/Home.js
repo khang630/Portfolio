@@ -1,9 +1,11 @@
 import { VscFoldDown } from "react-icons/vsc";
+import {BsArrowDownShort} from 'react-icons/bs'
+import { Link } from 'react-scroll'
 
 
 function Home() {
     return (
-        <div name='home' className="bg-gray-0 w-full h-screen">
+        <div name='Home' className="bg-white w-full h-screen">
             <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
                 <p className="text-[#F68989] font-bold">Hi, I'm</p>
                 <h1 className="text-[#C65D7B] text-7xl font-bold  ">Khang Nguyen</h1>
@@ -14,11 +16,14 @@ function Home() {
                     Otherwise, Thank You for visiting my portfolio and feel free to look around!</p>
                 <div>
                     <div>
-                        <button className="text-[#F68989] group flex items-center py-6 px-4 my-2 border-2 rounded bg-[#3A3845] hover:scale-105 duration-300 hover:bg-[#F68989] hover:text-[#3A3845]">View About
-                            <span className="duration-300">
-                                <VscFoldDown className="ml-2" />
-                            </span>
-                        </button>
+                        <Link to="About" smooth={true} duration={1000}>
+                            <button className="text-[#F68989] group flex items-center py-6 px-4 my-2 border-2 rounded bg-[#1c1b20] hover:scale-105 duration-300 hover:bg-[#F68989] hover:text-[#3A3845]">View About
+                                <span className="duration-300">
+                                    <BsArrowDownShort className="ml-2 scale-125" />
+                                </span>
+                            </button>
+                        </Link>
+
                     </div>
 
                 </div>
@@ -45,4 +50,6 @@ export default Home
 max-w-[1000px]: element has a max width of 1000 pixels
 mx-auto: margin left and right auto for that element
 
+
+#f8f8f8 - Super light gray color
 */

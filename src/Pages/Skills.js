@@ -18,7 +18,7 @@ import HTML from '../Images/HTML.png'
 
 const Skills = () => {
     return (
-        <div className='w-full h-screen bg-gray-0'>
+        <div name='Skills' className='w-full h-screen bg-gray-0'>
             <div className='flex flex-col justify-center items-center w-full h-screen'>
 
                
