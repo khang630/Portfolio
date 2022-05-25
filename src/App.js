@@ -7,17 +7,19 @@ import Interests from './Pages/Interests';
 import NavBar from './Pages/NavBar';
 import Projects from './Pages/Projects';
 import Skills from './Pages/Skills';
+import {useState} from 'react'
 
 
 function App() {
+  const [playing,setPlaying]=useState(false);
   return (
     <div>
-      <NavBar />
+      <NavBar setPlaying={setPlaying} playing={playing}/>
       <Home />
       <About/>
       <Skills/>
       <Projects/>
-      <Interests/>
+      <Interests setPlaying={setPlaying} playing={playing}/>
       <Contact/>
     </div>
   );

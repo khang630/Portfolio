@@ -3,14 +3,24 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import { Link } from 'react-scroll'
+import { IoMdMusicalNote } from "react-icons/io"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 
 import Logo from '../Images/K2.png'
 
-const NavBar = () => {
+const NavBar = (props) => {
 
+    AOS.init();
     const [nav, setNav] = useState(false)
     const handleClick = () => setNav(!nav)
+
+    const cancelMusic=()=>{
+        props.setPlaying(false);
+    }
+
 
     return (
         <div className='fixed w-full h-[70px] flex justify-between items-center px-4 bg-[#1c1b20] text-white z-50'>
@@ -20,7 +30,6 @@ const NavBar = () => {
                 </Link>
 
             </div>
-
             <div>
                 <ul className='hidden md:flex'>
                     <li className='hover:scale-105 duration-300'>
@@ -56,6 +65,12 @@ const NavBar = () => {
 
                 </ul>
             </div>
+
+            
+            <div className={props.playing ? 'text-black border-4 border-[#F68989] fixed sm:right-12 right-5 top-[90%]  rounded-full bg-white animate-better-Bounce hover:cursor-pointer hover:text-white hover:bg-black hover:border-[#C65D7B] duration-200'  : 'hidden'} onClick={cancelMusic}><IoMdMusicalNote size={40}/></div>
+
+           
+           
 
             <div onClick={handleClick} className='md:hidden z-10'>
                 {!nav ? <FaBars /> : <FaTimes />}
@@ -125,7 +140,7 @@ const NavBar = () => {
                     </li>
                 </ul>
             </div>
-        </div>
+        </div >
     )
 }
 

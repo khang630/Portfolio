@@ -3,10 +3,25 @@ import { GiGrandPiano } from 'react-icons/gi'
 import { BsFillArrowUpRightSquareFill } from 'react-icons/bs'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import ReactAudioPlayer from 'react-audio-player';
+import ReactHowler from 'react-howler'
 import Chopin from '../Downloads/Chopin.mp3'
+import { Howl, Howler } from 'howler';
+import { useState } from 'react';
 
-const Interests = () => {
+
+const Interests = (props) => {
+
+   
+
+
+    const clickPlay = () => {
+        props.setPlaying(true);
+    }
+
+    const clickPause = () => {
+        props.setPlaying(false)
+    }
+
     AOS.init();
     return (
         <div name='Interests' className='w-full h-screen bg-gray-0 min-h-[800px]'>
@@ -22,21 +37,15 @@ const Interests = () => {
                         <a href='https://www.youtube.com/channel/UC8KwbjmSoB2M9KE0ZhD5XiQ' target="_blank" className='text-black flex sm:justify-end mt-2' data-aos="fade-right" data-aos-duration="2500" data-aos-delay="1300"><span className='border-b-2 inline border-black'>Youtube Channel</span> <BsFillArrowUpRightSquareFill className='ml-2 mt-1' /></a>
                     </div>
                     <div>
-                        <p data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1100">I like to play the piano. My favorite classical piano piece would be Chopin's Nocturne in E-flat Major, Op. 9 No. 2.</p>
+                        <p data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1100">I like to play the piano. My favorite classical piano piece would be Chopin's <span className={props.playing ? 'font-bold animate-pulse' : 'font-bold cursor-pointer'} onClick={clickPlay}>Nocturne in E-flat Major, Op. 9 No. 2.</span></p>
                         <p data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1300" className='mt-2'>I also like to compose songs on the piano. I have a Youtube channel where I compose piano covers of k-pop songs.</p>
                     </div>
-
                 </div>
-               
-                <audio id="audioplayer" controls className=''>
-                    <source src={Chopin} type='audio/mp3' />    
-                </audio>
+                <ReactHowler id='chopin-audio' src={Chopin} playing={props.playing} loop={true} />
 
-              
+
+
             </div>
-
-
-
         </div>
     )
 }
