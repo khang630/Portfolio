@@ -1,5 +1,5 @@
 
-import React from 'react'; /* For every componenet, in order for React to understand JSX, we need to import React. */
+import React, { useEffect } from 'react'; /* For every componenet, in order for React to understand JSX, we need to import React. */
 import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Home from './Pages/Home';
@@ -7,6 +7,7 @@ import Interests from './Pages/Interests';
 import NavBar from './Pages/NavBar';
 import Projects from './Pages/Projects';
 import Skills from './Pages/Skills';
+
 
 function App() {
   return (

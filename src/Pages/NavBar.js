@@ -24,32 +24,32 @@ const NavBar = () => {
             <div>
                 <ul className='hidden md:flex'>
                     <li className='hover:scale-105 duration-300'>
-                        <Link to="Home" smooth={true} duration={1000}>
+                        <Link to="Home" smooth={true} duration={2200}>
                             Home
                         </Link>
                     </li>
                     <li className='hover:scale-105 duration-300'>
-                        <Link to="About" smooth={true} duration={1000}>
+                        <Link to="About" smooth={true} duration={2200}>
                             About
                         </Link>
                     </li>
                     <li className='hover:scale-105 duration-300'>
-                        <Link to="Skills" smooth={true} duration={1000}>
+                        <Link to="Skills" smooth={true} duration={2200}>
                             Skills
                         </Link>
                     </li>
                     <li className='hover:scale-105 duration-300'>
-                        <Link to="Projects" smooth={true} duration={1000}>
+                        <Link to="Projects" smooth={true} duration={2200}>
                             Project
                         </Link>
                     </li>
                     <li className='hover:scale-105 duration-300'>
-                        <Link to="Interests" smooth={true} duration={1000}>
+                        <Link to="Interests" smooth={true} duration={2200}>
                             Interests
                         </Link>
                     </li>
                     <li className='hover:scale-105 duration-300'>
-                        <Link to="Contact" smooth={true} duration={1000}>
+                        <Link to="Contact" smooth={true} duration={2200}>
                             Contact
                         </Link>
                     </li>
