@@ -3,6 +3,8 @@ import { GiGrandPiano } from 'react-icons/gi'
 import { BsFillArrowUpRightSquareFill } from 'react-icons/bs'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ReactAudioPlayer from 'react-audio-player';
+import Chopin from '../Downloads/Chopin.mp3'
 
 const Interests = () => {
     AOS.init();
@@ -23,11 +25,14 @@ const Interests = () => {
                         <p data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1100">I like to play the piano. My favorite classical piano piece would be Chopin's Nocturne in E-flat Major, Op. 9 No. 2.</p>
                         <p data-aos="fade-left" data-aos-duration="2000" data-aos-delay="1300" className='mt-2'>I also like to compose songs on the piano. I have a Youtube channel where I compose piano covers of k-pop songs.</p>
                     </div>
+
                 </div>
+               
+                <audio id="audioplayer" controls className=''>
+                    <source src={Chopin} type='audio/mp3' />    
+                </audio>
 
               
-               
-                
             </div>
 
 
@@ -37,3 +42,7 @@ const Interests = () => {
 }
 
 export default Interests
+
+/*
+  <ReactAudioPlayer src='../Downloads/Chopin.mp3' controls />
+*/
