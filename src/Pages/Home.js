@@ -6,7 +6,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
+
 function Home() {
+    
+
     AOS.init();
     return (
         <div name='Home' className="bg-white w-full h-screen min-h-[800px]">
@@ -32,6 +35,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
+              
             </div>
         </div>
     )

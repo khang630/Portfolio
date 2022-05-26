@@ -66,7 +66,7 @@ const NavBar = (props) => {
                 </ul>
             </div>
 
-            
+            <div className={props.playing ? 'text-[#F68989] fixed sm:right-12 right-5 top-[87%]  animate-better-Bounce duration-200'  : 'hidden'}>Pause</div>
             <div className={props.playing ? 'text-black border-4 border-[#F68989] fixed sm:right-12 right-5 top-[90%]  rounded-full bg-white animate-better-Bounce hover:cursor-pointer hover:text-white hover:bg-black hover:border-[#C65D7B] duration-200'  : 'hidden'} onClick={cancelMusic}><IoMdMusicalNote size={40}/></div>
 
            
