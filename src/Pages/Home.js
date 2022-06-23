@@ -16,7 +16,7 @@ function Home() {
             <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
                 <div>
                     <p className="text-[#F68989] font-bold" data-aos="fade-right" data-aos-duration="2500">Hi, I'm</p>
-                    <h1 className="text-[#C65D7B] text-7xl font-bold " data-aos="fade-in" data-aos-duration="2500" data-aos-delay="1000" >Khang Nguyen</h1>
+                    <h1 className="text-[#C65D7B] text-7xl font-bold"  data-aos="fade-in" data-aos-duration="2500" data-aos-delay="1000" >Khang Nguyen</h1>
                     <h2 className="text-[#874356] font-bold text-3xl pt-1" data-aos="fade-left" data-aos-duration="2500" data-aos-delay="2000">I am a recent graduate.</h2>
                     <div >
                         <p data-aos="fade-up" data-aos-duration="2500" data-aos-delay="2200" className="mt-2 max-w-[800px]">I am currently looking for work and am open to any opportunities to develop and start my career! </p>

@@ -2,6 +2,8 @@ import React from 'react'
 import {FaDatabase} from 'react-icons/fa'
 import {BsFillArrowUpRightSquareFill} from 'react-icons/bs'
 import {CgWebsite} from 'react-icons/cg'
+import Carousel from 'react-elastic-carousel'
+
 
 const Projects = () => {
   return (

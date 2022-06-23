@@ -9,7 +9,7 @@ const About = () => {
     AOS.init();
 
     return (
-        <div name='About' className='w-full h-screen bg-gray-0 text-black min-h-[800px]' data-aos="slide-right" data-aos-duration="2500" data-aos-delay="10">
+        <div name='About' className='w-full h-screen bg-gray-0 text-black min-h-[800px] ' data-aos="slide-right" data-aos-duration="2500" data-aos-delay="10">
             <div className='flex flex-col justify-center items-center h-full w-full '>
                 <div className='shadow:lg w-full h-screen sm:max-w-[1500px] sm:max-h-[500px] flex flex-col justify-center items-center bg-[#1c1b20] '>
                     <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-1 '>
