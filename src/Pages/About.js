@@ -2,6 +2,7 @@ import React from 'react'
 import { VscFoldDown } from "react-icons/vsc";
 import {FaMapMarkerAlt} from 'react-icons/fa'
 import {IoIosSchool} from 'react-icons/io'
+import {RiSuitcaseFill} from 'react-icons/ri'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -27,10 +28,18 @@ const About = () => {
                     </div>
                     <div className='max-w-[1000px] w-full  grid sm:grid-cols-2 gap-8 px-5 hover:scale-105 duration-300 mt-4'>
                         <div className='sm:text-right'>
+                            <p className='text-3xl font-bold  text-[#F68989] flex sm:justify-end' data-aos="fade-left" data-aos-duration="2500" data-aos-delay="1000">Experience <RiSuitcaseFill className='ml-2 mt-1'/></p>
+                        </div>
+                        <div data-aos="fade-in" data-aos-duration="2500" data-aos-delay="1600">
+                            <p className='text-white'>I am currently working as an associate software engineer at Lockheed Martin. (October 2022 - Present)</p>
+                        </div>
+                    </div>
+                    <div className='max-w-[1000px] w-full  grid sm:grid-cols-2 gap-8 px-5 hover:scale-105 duration-300 mt-4'>
+                        <div className='sm:text-right'>
                             <p className='text-3xl font-bold  text-[#F68989] flex sm:justify-end' data-aos="fade-left" data-aos-duration="2500" data-aos-delay="1000">Location <FaMapMarkerAlt className='ml-2 mt-1'/></p>
                         </div>
                         <div data-aos="fade-in" data-aos-duration="2500" data-aos-delay="1600">
-                            <p className='text-white'>I am looking for work in the Dallas-Fort Worth Metroplex area but I am also willing to relocate.</p>
+                            <p className='text-white'>I am mainly looking for remote work as a software engineer. I am located in Orlando FL, 32821.</p>
                         </div>
                     </div>
                 </div>
